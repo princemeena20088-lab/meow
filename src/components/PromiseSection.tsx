@@ -1,0 +1,5 @@
+import React from 'react';
+export function PromiseSection({onContinue,onBack}:{onContinue:()=>void;onBack:()=>void}) {
+ const promises=['I will always try to listen to you.','I will celebrate your little wins.','I will be honest and communicate with care.','I will remind you that you matter.'];
+ return <section className="px-6 py-10 text-center"><div className="text-5xl mb-4">🤞🏻</div><h2 className="font-handwritten text-3xl text-rose-500 mb-5">A few little promises</h2><div className="space-y-3 text-left mb-8">{promises.map((p,i)=><p key={p} className="rounded-xl bg-white/80 border border-pink-100 p-4">💗 {p}</p>)}</div><div className="flex justify-center gap-3"><button onClick={onBack} className="rounded-full border border-rose-300 px-5 py-2 text-rose-500">← Back</button><button onClick={onContinue} className="rounded-full bg-rose-400 px-6 py-2 text-white">One last thing →</button></div></section>;
+}
