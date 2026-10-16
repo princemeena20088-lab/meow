@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    background-color: #FFF7F8;
+    color: #4A3E3D;
+    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Smooth scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.font-handwritten {
+  font-family: 'Kalam', 'Patrick Hand', cursive;
+}
+
+.font-body {
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Subtle floating heart animation */
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(0.8) rotate(0deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.7;
+  }
+  85% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-100vh) scale(1.1) rotate(15deg);
+    opacity: 0;
+  }
+}
+
+.animate-float-heart {
+  animation: floatUp 8s linear infinite;
+}
+
+/* Soft paper shadow */
+.paper-shadow {
+  box-shadow: 0 4px 20px -2px rgba(224, 122, 148, 0.12), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+}
+
+.card-shadow {
+  box-shadow: 0 8px 30px -4px rgba(230, 150, 170, 0.15), 0 2px 8px -2px rgba(0, 0, 0, 0.03);
+}
+
+/* Lined notebook effect */
+.notebook-lines {
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 31px,
+    #F7D7DF 31px,
+    #F7D7DF 32px
+  );
+  line-height: 32px;
+}
+
+/* Washi tape decoration */
+.washi-tape {
+  background: rgba(244, 182, 194, 0.75);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transform: rotate(-1.5deg);
+}
+
+/* Pulse soft */
+@keyframes pulseGentle {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+}
+
+.animate-pulse-gentle {
+  animation: pulseGentle 2.4s ease-in-out infinite;
+}

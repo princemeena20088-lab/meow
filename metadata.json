@@ -1,0 +1,6 @@
+{
+  "name": "For You 🤍",
+  "description": "A sweet, personal interactive keepsake with little promises, memories, and heartfelt words.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
