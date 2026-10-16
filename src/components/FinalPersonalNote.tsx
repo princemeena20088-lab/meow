@@ -1,0 +1,4 @@
+import React from 'react';
+export function FinalPersonalNote({onRestart}:{onRestart:()=>void}) {
+ return <section className="px-6 py-10 text-center"><div className="text-6xl mb-5">💌</div><h2 className="font-handwritten text-3xl text-rose-500 mb-5">For my cutie ♡</h2><p className="leading-8 whitespace-pre-line mb-7">Anywayyy, I think I've talked enough now, hehe. I just wanted to make you something you can open whenever you need a little reminder of how much you mean to me.\n\nThis is just a tiny website, but every little part was made with care. I hope it brings a smile to your face. Thank you for being you. Mwaahhh! 💗</p><p className="font-handwritten text-2xl text-rose-500 mb-7">Always cheering for you ♡</p><button onClick={onRestart} className="rounded-full bg-rose-400 text-white px-7 py-3">Read it again ↺</button></section>;
+}
