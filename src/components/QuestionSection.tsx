@@ -1,0 +1,5 @@
+import React,{useState} from 'react';
+export function QuestionSection({onComplete,onBack}:{onComplete:()=>void;onBack:()=>void}) {
+ const [answer,setAnswer]=useState('');
+ return <section className="px-6 py-10 text-center"><div className="text-5xl mb-4">🥺💗</div><h2 className="font-handwritten text-3xl text-rose-500 mb-4">Can I ask you something?</h2><p className="leading-7 mb-6">Will you keep making sweet little memories with me, one day at a time?</p><div className="flex justify-center gap-3 mb-7"><button onClick={()=>setAnswer('Of course 💗')} className="rounded-full bg-rose-400 text-white px-6 py-3">Of course 💗</button><button onClick={()=>setAnswer('You are so cute 😭')} className="rounded-full bg-pink-100 text-rose-500 px-6 py-3">You are so cute 😭</button></div>{answer&&<p className="mb-6 text-rose-500 font-semibold">{answer} — you just made me smile.</p>}<div className="flex justify-center gap-3"><button onClick={onBack} className="rounded-full border border-rose-300 px-5 py-2 text-rose-500">← Back</button><button onClick={onComplete} className="rounded-full bg-rose-400 px-6 py-2 text-white">Read my final note →</button></div></section>;
+}
