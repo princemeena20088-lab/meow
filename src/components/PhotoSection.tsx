@@ -1,0 +1,4 @@
+import React from 'react';
+export function PhotoSection({onContinue,onBack}:{onContinue:()=>void;onBack:()=>void}) {
+ return <section className="px-6 py-10 text-center"><div className="text-5xl mb-4">📸</div><h2 className="font-handwritten text-3xl text-rose-500 mb-3">Little moments, big feelings</h2><p className="leading-7 mb-6">Every memory with you is a little treasure. Add your favourite pictures to this page whenever you want to make it even more personal. ♡</p><div className="grid grid-cols-2 gap-3 mb-7">{['🌷','🧸','💗','🌙'].map((e,i)=><div key={i} className="aspect-square rounded-2xl bg-white/80 border border-pink-100 grid place-items-center text-5xl shadow-sm">{e}</div>)}</div><div className="flex justify-center gap-3"><button onClick={onBack} className="rounded-full border border-rose-300 px-5 py-2 text-rose-500">← Back</button><button onClick={onContinue} className="rounded-full bg-rose-400 px-6 py-2 text-white">Next →</button></div></section>;
+}
